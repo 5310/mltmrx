@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>mltmrx</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+  <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.1.0/material.min.js"></script>
+  
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,500,400italic,700,700italic'
+    rel='stylesheet' type='text/css'>
+  
+  <!-- Custom style -->
+  <link rel="stylesheet" href="index.css">
+  
+  <!-- JSPM -->
+  <script src="/jspm_packages/system.js"></script>
+  <script src="/config.js"></script>
+  
+  <!-- Application code -->
+  <script>
+    System.import('./index')
+  </script>
+
+</head>
+
+<body class="mdl-color--grey-200">
+  
+  <main class="main-container mdl-grid">
+    
+    <!-- Dynamic content -->
+    <div id="links" class="main-content mdl-cell mdl-cell--12-col mdl-grid--no-spacing mdl-color--white mdl-shadow--2dp mdl-color-text--grey-800">
+      
+      <div class="link">Loading...</div>
+      
+      <!--
+      <div class="link">
+        <input class="link-text text mdl-textfield__input" type="text"
+               value="ddg.gg"/>
+        <button class="link-remove icon mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">remove_circle</i></button>
+      </div>
+      
+      <div class="link">
+        <input class="link-text text mdl-textfield__input" type="text"
+               value="goo.gl"/>
+        <button class="link-remove icon mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">remove_circle</i></button>
+      </div>
+      
+      <div class="link-new link new mdl-color-text--grey-500"><i class="material-icons">add_circle_outline</i><div>Bookmark</div></div>
+      -->
+      
+    </div>
+    
+  </main>
+  
+  <footer class="footer-container mdl-layout__footer mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800">
+    
+    <!-- Dynamic content -->
+    <div class="footer-content mdl-layout__header-row">
+        
+      <div id="status" class="bookmarklet-status mdl-layout-title">0 mltmrx</div>
+      
+      <div class="mdl-layout-spacer"></div>
+      
+      <a id="fab" class="bookmarklet-button mdl-button mdl-js-button mdl-button--fab mdl-color--white mdl-shadow--4dp"
+         href="javascript:%5B%22http://ddg.gg%22,%22http://goo.gl%22%5D.forEach(l=%3Ewindow.open(l))">
+        <i class="material-icons">link</i>
+      </a>
+      
+    </div>
+    
+  </footer>
+  
+</body>
+
+</html>
