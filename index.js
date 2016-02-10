@@ -83,7 +83,7 @@ const main = ({DOMMain}) => {
         .filter((ev) => ev.target.value.trim().length === 0)
     ).map((ev) => ({type: 'remove', index: ev.target.parentElement.dataset.index})).share()
 
-  const links$ = Observable.merge(new$, edit$, remove$)
+  const linkse$ = Observable.merge(new$, edit$, remove$)
     .startWith([])
     .scan((o, a) => {
       let o2 = o.slice(0)
@@ -114,11 +114,11 @@ const main = ({DOMMain}) => {
   ).map((index) => `.link[data-index='${index}']>.link-text`)
 
   return {
-    DOMMain: links$
+    DOMMain: linkse$
       .tap(log)
       .map(vLinks),
-    DOMStatus: links$.map(vStatus),
-    DOMFAB: links$.map(vFAB),
+    DOMStatus: linkse$.map(vStatus),
+    DOMFAB: linkse$.map(vFAB),
     FocusMain: focuse$
   }
 }
