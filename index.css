@@ -22,8 +22,11 @@
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     transition-property: background-color, border-color;
   }
+  .main-content>.link:not(.new):nth-child(even) {
+    background: rgba(0, 0, 0, 0.03);
+  }
   .main-content>.link:hover {
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.06);
   }
   .main-content>.link:focus {
     border: solid rgba(0, 0, 0, 0.12) 1px;
